@@ -7,7 +7,7 @@ const Separator = () => {
   return <View style={Platform.OS === "android" ? styles.separator : null} />;
 }
 
-const ONE_SECOND_IN_MS = 500;
+const ONE_SECOND_IN_MS = 300;
 
 const LETTER_PATTERNS = {
   'a': [1, 2],
@@ -201,7 +201,7 @@ class Main extends Component {
     super(props);
     this.state = {
       // talkToMeInput: 'the quick brown fox jumps over the lazy dog',
-      talkToMeInput: 'test',
+      talkToMeInput: 'the quick brown fox jumps over the lazy dog',
       outputText: "",
       signal: [],
       decodeMorse: <DecodeMorse />
